@@ -1,0 +1,2 @@
+now cp or rsync both BaseSystem.dmg and BaseSystem.chunklist into com.apple.recovery.boot folder.
+
