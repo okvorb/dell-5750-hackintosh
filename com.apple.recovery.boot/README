@@ -1,2 +1,6 @@
+# Latest version
+# ie. Monterey (12)
+python3 ./macrecovery.py -b Mac-E43C1C25D4880AD6 -m 00000000000000000 download
+
 now cp or rsync both BaseSystem.dmg and BaseSystem.chunklist into com.apple.recovery.boot folder.
 
