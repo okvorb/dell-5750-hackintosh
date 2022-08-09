@@ -1,0 +1,32 @@
+Fixing Backlight: Manual
+
+Intel(R) UHD Graphics
+\_SB.PCI0.GFX0
+
+Location paths:
+PCIROOT(0)#PCI(0200)
+ACPI(_SB_)#ACPI(PCI0)#ACPI(GFX0)
+
+
+NVIDIA Quadro RTX 3000 with Max-Q Design
+\_SB.PCI0.PEG0.PEGP
+
+Location paths:
+PCIROOT(0)#PCI(0100)#PCI(0000)
+ACPI(_SB_)#ACPI(PCI0)#ACPI(PEG0)#ACPI(PEGP)
+
+
+
+Intel Processor
+\_SB.PR00
+..
+\_SB.PR11
+
+
+Intel(R) SMBus - 06A3
+\_SB.PCI0.SBUS
+
+
+Embedded controller
+_SB.PCI0.LPCB
+
