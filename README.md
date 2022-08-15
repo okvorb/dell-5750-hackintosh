@@ -2,6 +2,8 @@
 
 [GUIDE: Easy USB Mapping with USBToolbox on Windows](https://www.reddit.com/r/hackintosh/comments/ta1ef4/guide_easy_usb_mapping_with_usbtoolbox_on_windows/)
 
+macOS Installer: Drives you wish to install macOS on must be both of GUID partition Scheme and APFS !!!!
+
 
 Post Install:
 
