@@ -1,0 +1,69 @@
+Adjust UEFI variables to enable 4K@60Hz and disable CFG lock
+
+Download the latest BIOS firmware and extract setup section
+
+$ Dell_PFS_Extract.py XPS_17_9700_Precision_5750_1.18.0.exe
+
+Dell PFS Update Extractor v5.1
+
+*** XPS_17_9700_Precision_5750_1.18.0.exe
+
+    Extracted Dell PFS 1 > XPS_17_9700_Precision_5750_1.18.0 > Utilities section!
+
+    Extracted Dell PFS 1 > XPS_17_9700_Precision_5750_1.18.0 > Firmware section!
+
+Done!
+
+$ UEFITool ./XPS_17_9700_Precision_5750_1.18.0.exe_extracted/Firmware/1\ XPS_17_9700_Precision_5750_1.18.0\ --\ 1\ System\ BIOS\ with\ BiosGuard\ v1.18.0.bin
+
+CTRL+F -> Text (Unicode  checked) : "CFG Lock" or "DVMT"
+
+right click on "PE32 image section" > Extract as is > Section_PE32_image_E6A7A1CE-5881-4B49-80BE-69C91811685C_Setup.sct
+
+$ ifrextract Section_PE32_image_E6A7A1CE-5881-4B49-80BE-69C91811685C_Setup.sct setup.txt
+
+find "CFG Lock" or "DVMT Pre-Allocated" inside setup.txt
+
+
+Run the Modified GRUB Shell and write the following command (setup_var_cv)
+
+BIOS 1.13 version
+
+CFG Lock
+CpuSetup - name of 0x3E variable
+0x3E - var offset
+0x01 - var size 
+0x0 - var value (disable CFG Lock)
+setup_var_cv CpuSetup 0x3E 0x01 0x0 
+
+BELOW NOT TESTED AND NOT NEEDED!!!!
+DVMT Pre-Allocated
+setup_var_cv 0xF5 0x01 0x2
+
+BIOS 1.18 version
+
+"CFG Lock" - VarStoreInfo (VarOffset/VarName): 0x3F, VarStore: 0x3 
+"CpuSetup" - name of 0x3F variable found by "VarStoreId: 0x3"
+0x3F - var offse
+0x01 - var size 
+0x0 - var value (disable CFG Lock)
+setup_var_cv CpuSetup 0x3F 0x01 0x0 
+
+
+"DVMT Pre-Allocated" - VarStoreInfo (VarOffset/VarName): 0xF5, VarStore: 0x2, QuestionId: 0x29C, Size: 1 
+
+"SaSetup" - name of 0xF5 variable found by "VarStore: 0x2" 
+setup_var_cv SaSetup 0xF5 0x01 0x2 
+(0x2 = 64M, default = 32M)
+
+
+DVMT Total Gfx Mem, VarStoreInfo (VarOffset/VarName): 0xF6, VarStore: 0x2, QuestionId: 0x29D, Size: 1, Min: 0x1, Max 0x3, Step: 0x0 {05 91 AA 12 AB 12 9D 02 02 00 F6 00 10 10 01 03 00}
+
+
+0x79D30 			Default: DefaultId: 0x0, Value (8 bit): 0x2 {5B 06 00 00 00 02}
+0x79D36 			One Of Option: 128M, Value (8 bit): 0x1 {09 07 AC 12 00 00 01}
+0x79D3D 			One Of Option: 256M, Value (8 bit): 0x2 {09 07 AD 12 00 00 02}
+0x79D44 			One Of Option: MAX, Value (8 bit): 0x3 {09 07 AE 12 00 00 03}
+
+setup_var_cv SaSetup 0xF6 0x01 0x3
+
