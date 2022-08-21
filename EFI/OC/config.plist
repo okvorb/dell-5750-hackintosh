@@ -264,7 +264,7 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>xJsDAA==</data>
+				<data>CACbPg==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1240,7 +1240,7 @@
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>SecureBootModel</key>
-			<string>j152f</string>
+			<string>j223</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -1378,7 +1378,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v debug=0x100 keepsyms=1 -wegnoegpu</string>
+				<string>-v debug=0x100 keepsyms=1 -wegnoegpu -wegdbg -liludbg -igfxblr -igfxmpc -igfxmlr -igfxcdc igfxfw=2 -igfxdvmt</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1447,23 +1447,23 @@
 			<key>AdviseFeatures</key>
 			<false/>
 			<key>MLB</key>
-			<string>C020026004NN9PRAD</string>
+			<string>C02039902CD0000JC</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>QDz8ic5q</data>
+			<data>gO0s4MVJ</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>SystemProductName</key>
-			<string>MacBookPro16,1</string>
+			<string>MacBookPro16,3</string>
 			<key>SystemSerialNumber</key>
-			<string>C02C3EY7MD6N</string>
+			<string>C02DGSZ4P3XY</string>
 			<key>SystemUUID</key>
-			<string>DDBF13F5-7CA2-401A-A809-420189DD9742</string>
+			<string>19DB1BE1-64B8-4DE8-8E3E-AA1E9490AAE5</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
