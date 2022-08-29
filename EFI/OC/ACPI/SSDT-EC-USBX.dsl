@@ -20,10 +20,9 @@
  * Reference USB: https://applelife.ru/posts/550233
  * Reference EC: https://applelife.ru/posts/807985
  */
-DefinitionBlock ("", "SSDT", 2, "ACDT", "SsdtEC", 0x00001000)
+DefinitionBlock ("", "SSDT", 2, "CORP ", "SsdtEC", 0x00001000)
 {
-    External (\_SB_.PCI0.LPCB, DeviceObj)
-
+    External (\_SB.PCI0.LPCB, DeviceObj)
     /*
      * Uncomment replacing EC0 with your own value in case your
      * motherboard has an existing embedded controller of PNP0C09 type.
