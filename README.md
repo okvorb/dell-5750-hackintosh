@@ -167,7 +167,7 @@ $ dmesg | grep -i input
 | **CPU** | Intel Core i7-10850H, Model: 165, Processor ID: A0652 | ✅ Working | It seems power management working. I didn't use CPUFriend kext and left default LFM value (1300Mhz) although BIOS states that min clock speed is 800 mhz. |
 | **iGPU** | Intel CometLake-H GT2 [UHD Graphics] | ✅ Working | 1536 Mb of VRAM |
 | **Internal Display** | 3840x2400 (WQUXGA) UI looks like 1920x1200@60.00Hz | ✅ Working | Internal eDP display fully working including Touchscreen (ELAN?) and Backlight control. Automatically Adjust Brightness (NO)|
-| **External Display(s)** | DP 1.4, HDMI 2.0 via USB-C adapter Dell DA310 | ❌ Not Tested | |
+| **External Display(s)** | DP 1.4, HDMI 2.0 via USB-C adapter Dell DA310 | ❌ Not Working | |
 | **SSD** | SSD WD Black SN750 1TB + 250GB | ✅ Working |
 | **Trackpad** | DELL0990??? | ✅ Working | Working with full gesture support (5 fingers) but the hardware buttons are not working. You can use left/right click with touch tap (change in settings). |
 | **Wi-Fi/ BT** | Intel(R) Wi-Fi 6 AX201 160MHz | ✅ Working | |
