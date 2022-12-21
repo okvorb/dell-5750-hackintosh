@@ -332,6 +332,11 @@ Almost all changes are done inside the OpenCore configuration file. Use the prov
 
 **[YOU HAVE TO SET UNIQUE SMBIOS SERIAL/UUID BY GenSMBIOS APPLICATION](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#platforminfo)**
 
+## Known Issues:
+
+- Audio not working
+- Trackpad physical buttons not working
+- Blank screen with Dell logo if trying to sleep
 
 ## Useful Links
 - [GUIDE: Easy USB Mapping with USBToolbox on Windows](https://www.reddit.com/r/hackintosh/comments/ta1ef4/guide_easy_usb_mapping_with_usbtoolbox_on_windows/)
