@@ -6,9 +6,9 @@ A collection of all files needed to run Monterey on a Dell Precision 17 5750-625
 
 | Name  | Version |
 | ------------- | ------------- |
-| MacOS  | Monterey 12.5.1  |
+| MacOS  | Monterey 12.6.2  |
 | BIOS  | 1.18.0  |
-| OpenCore  | 0.8.3  |
+| OpenCore  | 0.8.7  |
 
 ## Hardware
 
