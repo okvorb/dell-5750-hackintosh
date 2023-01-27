@@ -335,7 +335,6 @@ Almost all changes are done inside the OpenCore configuration file. Use the prov
 ## Known Issues:
 
 - Audio not working
-- Trackpad physical buttons not working
 - Blank screen with Dell logo if trying to sleep
 
 ## Useful Links
