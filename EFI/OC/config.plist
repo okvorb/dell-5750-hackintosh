@@ -2005,9 +2005,9 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-wegnoegpu -igfxblr -igfxmpc -igfxmlr -igfxcdc igfxfw=2 -igfxdvmt -iosd3v3 -igfxnotelemetryload alcid=15</string>
+				<string>-wegnoegpu -igfxblr -igfxmpc -igfxmlr -igfxcdc igfxfw=2 -igfxdvmt -iosd3v3 -igfxnotelemetryload alcid=15 -no_compat_check amfi_get_out_of_my_way=1</string>
 				<key>csr-active-config</key>
-				<data>AAAAAA==</data>
+				<data>AwgAAA==</data>
 				<key>prev-lang:kbd</key>
 				<data>cnUtUlU6MjUy</data>
 				<key>run-efi-updater</key>
@@ -2026,6 +2026,7 @@
 			</array>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
+				<string>csr-active-config</string>
 				<string>boot-args</string>
 				<string>ForceDisplayRotationInEFI</string>
 			</array>
