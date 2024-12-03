@@ -477,26 +477,12 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x14,0x3)</key>
 			<dict>
-				<key>IOName</key>
-				<string>pci14e4,43a0</string>
-				<key>compatible</key>
-				<string>pci106b,117</string>
-				<key>device-id</key>
-				<data>AQMAAA==</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,20,3</string>
 				<key>device_type</key>
 				<string>Network controller</string>
 				<key>model</key>
-				<string>BCM4360 802.11ac Wireless Network Adapter</string>
-				<key>name</key>
-				<string>pci14e4,43a0</string>
-				<key>pci-aspm-default</key>
-				<integer>0</integer>
-				<key>subsystem-id</key>
-				<data>EwEA</data>
-				<key>subsystem-vendor-id</key>
-				<data>awEA</data>
-				<key>vendor-id</key>
-				<data>5AIAAA==</data>
+				<string>Comet Lake PCH CNVi WiFi</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x15,0x0)</key>
 			<dict>
